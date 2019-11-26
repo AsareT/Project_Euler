@@ -6,7 +6,7 @@ public class ThreeToFive {
 
         int result = 0;
 
-        for (int i = 1; i < num; i++){
+        for (int i = 3; i < num; i++){
             if (divisableByThree(i) || divisableByFive(i)){
                 result += i;
             }
