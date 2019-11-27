@@ -14,6 +14,7 @@ public class Main {
             System.out.println("Which solution would you like to test, choose a number ");
             System.out.println("1. Multiples of 3 and 5 (sum of)");
             System.out.println("2. Sum of even Fibonacci numbers up to");
+            System.out.println("3. Largest Prime factor");
             System.out.println("0. Exit");
 
             choice =scanner.nextInt();
@@ -22,6 +23,8 @@ public class Main {
                 case 1: menuThreeToFive();
                     break;
                 case 2: menuFibonacciUpTo();
+                    break;
+                case 3: menuLargestPrimeFactor();
                     break;
                 default:
                     System.out.println("This problem currently doesnt exist");
@@ -36,7 +39,6 @@ public class Main {
         System.out.println("Please give a value to be calculated");
         int num = scanner.nextInt();
         System.out.println(ThreeToFive.multiplesOfThreeAndFive(num));
-
         return;
     }
 
@@ -44,7 +46,13 @@ public class Main {
         System.out.println("Please give a value to be calculated");
         int num = scanner.nextInt();
         System.out.println(EvenFibonacciNumbers.evenFibSumUpTo(num));
+        return;
     }
 
-
+    private static void menuLargestPrimeFactor() {
+        System.out.println("Please give a value to be calculated");
+        long num = scanner.nextLong();
+        System.out.println(LargestPrimeFactor.largestPrimeFactorOf(num));
+        return;
+    }
 }
