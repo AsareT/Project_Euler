@@ -13,12 +13,15 @@ public class Main {
         while (choice != 0){
             System.out.println("Which solution would you like to test, choose a number ");
             System.out.println("1. Multiples of 3 and 5 (sum of)");
+            System.out.println("2. Sum of even Fibonacci numbers up to");
             System.out.println("0. Exit");
 
             choice =scanner.nextInt();
 
             switch (choice){
                 case 1: menuThreeToFive();
+                    break;
+                case 2: menuFibonacciUpTo();
                     break;
                 default:
                     System.out.println("This problem currently doesnt exist");
@@ -35,6 +38,12 @@ public class Main {
         System.out.println(ThreeToFive.multiplesOfThreeAndFive(num));
 
         return;
+    }
+
+    private static void menuFibonacciUpTo() {
+        System.out.println("Please give a value to be calculated");
+        int num = scanner.nextInt();
+        System.out.println(EvenFibonacciNumbers.evenFibSumUpTo(num));
     }
 
 
