@@ -39,20 +39,17 @@ public class Main {
         System.out.println("Please give a value to be calculated");
         int num = scanner.nextInt();
         System.out.println(ThreeToFive.multiplesOfThreeAndFive(num));
-        return;
     }
 
     private static void menuFibonacciUpTo() {
         System.out.println("Please give a value to be calculated");
         int num = scanner.nextInt();
         System.out.println(EvenFibonacciNumbers.evenFibSumUpTo(num));
-        return;
     }
 
     private static void menuLargestPrimeFactor() {
         System.out.println("Please give a value to be calculated");
         long num = scanner.nextLong();
         System.out.println(LargestPrimeFactor.largestPrimeFactorOf(num));
-        return;
     }
 }
